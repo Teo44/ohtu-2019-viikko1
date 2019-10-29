@@ -124,11 +124,11 @@ public class VarastoTest {
     
     // tama testi ei mene lapi, saldoksi tulee -1. Oletettavasti ei 
     // toivottua.
-//    @Test
-//    public void varastoAlkusaldollaNegatiivinenTilavuus()   {
-//        Varasto varasto2 = new Varasto(-1, 5);
-//        assertEquals(0.0, varasto2.getSaldo(), 0);
-//    }
+    @Test
+    public void varastoAlkusaldollaNegatiivinenTilavuus()   {
+        Varasto varasto2 = new Varasto(-1, 5);
+        assertEquals(0.0, varasto2.getSaldo(), 0);
+    }
     
     @Test
     public void varastoAlkusaldollaNegatiivinenTilavuus2()  {
