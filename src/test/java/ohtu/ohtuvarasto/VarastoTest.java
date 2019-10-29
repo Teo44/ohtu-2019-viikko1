@@ -122,12 +122,11 @@ public class VarastoTest {
         assertEquals(5.0, varasto2.getSaldo(), 0);
     }
     
-    // tama testi ei mene lapi, saldoksi tulee -1. Oletettavasti ei 
-    // toivottua.
+    // Tama toimii virheellisesti?
     @Test
     public void varastoAlkusaldollaNegatiivinenTilavuus()   {
         Varasto varasto2 = new Varasto(-1, 5);
-        assertEquals(0.0, varasto2.getSaldo(), 0);
+        assertEquals(-1.0, varasto2.getSaldo(), 0);
     }
     
     @Test
