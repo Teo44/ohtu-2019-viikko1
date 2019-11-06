@@ -3,6 +3,7 @@
 <module name="Checker">
 
     <module name="TreeWalker">
+		<property name="severity" value="warning"/>
 		<module name="MethodLength">
   			<property name="tokens" value="METHOD_DEF"/>
 	   		<property name="max" value="15"/>
@@ -21,5 +22,4 @@
 			<property name="max" value="3"/>
 		</module>
     </module>
-
 </module>
